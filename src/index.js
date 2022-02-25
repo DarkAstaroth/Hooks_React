@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import CounterApp from "./components/01-useState/CounterApp";
-import CounterHook from "./components/01-useState/CounterHook";
+// import CounterApp from "./components/01-useState/CounterApp";
+// import CounterHook from "./components/01-useState/CounterHook";
 //import HookApp from "./HookApp";
+import SimpleForm from "./components/02-useEffect/SimpleForm";
 
-ReactDOM.render(<CounterHook />, document.getElementById("root"));
+ReactDOM.render(<SimpleForm />, document.getElementById("root"));
