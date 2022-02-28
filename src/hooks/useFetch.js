@@ -21,17 +21,24 @@ const useFetch = (url) => {
     fetch(url)
       .then((resp) => resp.json())
       .then((data) => {
-        setTimeout(() => {
-          if (isMounted.current) {
-            setState({
-              loading: false,
-              error: null,
-              data,
-            });
-          } else {
-            console.log("Setstate se previnio");
-          }
-        }, 4000);
+        setState({
+          loading: false,
+          error: null,
+          data,
+        });
+
+        // Uso del use Ref
+        // setTimeout(() => {
+        //   if (isMounted.current) {
+        //     setState({
+        //       loading: false,
+        //       error: null,
+        //       data,
+        //     });
+        //   } else {
+        //     console.log("Setstate se previnio");
+        //   }
+        // }, 4000);
       });
   }, [url]);
 
